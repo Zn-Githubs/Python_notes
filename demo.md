@@ -19,7 +19,7 @@
       ```
    2. 属性值包含相同字符串
       ```python
-      //标签[contains(@属性名, "开头相同字符串")]
+      //标签[contains(@属性名, "相同字符串")]
       ```
    3. 对Xpath返回的对象执行XPath
       例：
@@ -32,3 +32,8 @@
       useful = html.xpath('//div[@id="test1"]')[0]
       info = useful.xpath('string(.)')
       ```
+# Beautiful Soup4
+## 安装
+`pip install beautifulsoup4`
+## 导入
+`from`
