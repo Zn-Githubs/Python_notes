@@ -36,4 +36,22 @@
 ## 安装
 `pip install beautifulsoup4`
 ## 导入
-`from`
+`from bs4 import BeautifulSoup`
+## 语法
+步骤：
+   1. 处理源代码生成的BeautifulSoup对象
+   2. 使用find_all()或者find()来查找内容
+      1. 解析源代码
+         ```python
+         soup = BeautifulSoup(网页源代码, '解析器')# 解析器可以使用lxml
+         ```
+      2. 查找内容
+         ```python
+         useful = soup.find(class_='useful')
+         all_content = useful.find_all('li')
+         for li in all_content：
+         print(li.string)
+         ```
+### find()与find_all区别
+- find_all()返回的是BeautifulSoup Tag对象组成的列表，如果没有找到符合要求的标签则返回空列表
+- find()返回的是一个BeautifulSoup Tag对象，如果有多个符合条件的标签，则返回第1个，找不到则返回None
