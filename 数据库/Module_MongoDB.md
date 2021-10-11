@@ -9,3 +9,11 @@ pass
 1. 如果数据库就在本地计算机，只需要在Name一栏随便取个名字即可
 2. 单击“Connect”按钮连接MongoDB
 ## PyMongo的安装与使用
+> PyMongo模块是Python对MongoDB操作的接口包，能够实现对MongoDB的增删改查及排序等操作
+### 安装
+```shell
+pip install pymongo
+```
+### 使用
+1. 初始化数据库
+
